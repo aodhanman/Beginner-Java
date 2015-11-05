@@ -1,0 +1,26 @@
+
+public class UniString {
+
+	public static void main (String[] args){
+		
+		char euro ='\u20ac';
+		char num1 ='1';
+		char num2 ='8';
+		
+		System.out.print(euro );
+		System.out.print(num1);
+		System.out.print(num2);
+		System.out.println(num2);
+		
+	
+		char letter1 ='j';
+		char letter2 ='o';
+		char letter3 ='e';
+		
+		System.out.print(Character.toUpperCase(letter1));
+		System.out.print(Character.toUpperCase(letter2));
+		System.out.println(Character.toUpperCase(letter3));
+	}
+	
+	
+}
