@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+
+public class NameGuess {
+	public static void main(String[] args){
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Please enter the name you'd like to use : ");
+
+		String name = scanner.next();
+		
+		String guess = "";
+		int numTries = 0;
+		
+		while (!guess.equals(name.toLowerCase())){
+			guess = "";
+			while (guess.length() < name.length()){
+				char asciiChar = (char)(Math.random() *26 + 97);
+				guess = guess + asciiChar;
+			}
+			numTries++;
+		}
+		System.out.println(name + " found after " + numTries + " tries!");
+	}
+}
