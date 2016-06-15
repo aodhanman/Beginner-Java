@@ -1,0 +1,23 @@
+public class Solution2 {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        String s = " ";
+        String h = "#";
+        
+        for(int i = 1; i < n+1; i ++){
+            int p = i;
+            while(p < n){
+                System.out.print(s);
+                p++;
+            }
+            for(int j = i; j > 0; j --){
+                System.out.print(h);
+            }
+            System.out.println();
+
+        }
+    }
+}
+
