@@ -1,0 +1,17 @@
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        String a=sc.next();
+        StringBuilder str = new StringBuilder();
+        str.append(a);
+        str.reverse();
+        if(str.toString().equals(a)){
+            System.out.println("Yes");
+        }else{
+            System.out.println("No");
+        }
+        
+    }
+}
